@@ -543,9 +543,9 @@ a.read {
 	display: block;
 	margin-left: 4%;
 }
-.grid_1_of_3:first-child { 
-	margin-left: 0; 
-} 
+.grid_1_of_3:first-child {
+	margin-left: 0;
+}
 .images_1_of_3 {
 	float:left;
 	width:30.333%;
@@ -767,7 +767,6 @@ display: inline-block;
 	font-weight: 600;
 }
 .register-top-grid div, .register-bottom-grid div {
-	width: 48%;
 	float: left;
 	margin: 10px 0;
 }
@@ -778,7 +777,7 @@ display: inline-block;
 	display: block;
 	text-transform: uppercase;
 }
-.register-top-grid input[type="text"], .register-bottom-grid input[type="text"] {
+.register-top-grid input[type="text"], .register-bottom-grid input[type="text"], textarea#message {
 	border: 1px solid #EEE;
 	outline-color:#FF5B36;
 	width: 96%;
@@ -853,10 +852,7 @@ display: inline-block;
 .news-letter:hover {
 	color:#00BFF0;
 }
-.register-but{
-	margin-top:1em;
-}
-.register-but form input[type="submit"] {
+input[type="submit"] {
 	background: #55bfea;
 	color: #FFF;
 	font-size: 1.2em;
@@ -870,7 +866,8 @@ display: inline-block;
 	border: none;
 	outline: none;
 }
-.register-but input[type="submit"]:hover {
+
+input[type="submit"]:hover {
 	background:#000;
 }
 div.register-bottom-grid {
@@ -904,7 +901,7 @@ div.register-bottom-grid {
 	font-size: 1em;
 }
 .link {
-	font-size: 0.9em; 
+	font-size: 0.9em;
 }
 .wmuSliderPrev {
 	background-position: -185px -7px;
@@ -1042,7 +1039,7 @@ h3.style1 {
 	display:block;
 }
 .head-nav ul li a:hover {
-	background: none; 
+	background: none;
 	color: #d80112;
 }
 .head-nav ul li a {
