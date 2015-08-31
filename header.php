@@ -31,12 +31,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="head-nav">
 					<span class="menu"> </span>
 						<ul class="cl-effect-16">
-							<li><a href="index.php" >home</a></li>
+							<li><a href="index.php" data-hover="HOME" >home</a></li>
               <li><a href="what_we_do.php"  data-hover="WHAT WE DO">what we do</a></li>
-							<li><a href="our_work.php"  data-hover="OUR WORK">our work</a></li>
+							<li><a href="our_work.php"  data-hover="PORTOFOLIO">portofolio</a></li>
 							<li><a href="about_us.php"  data-hover="ABOUT US">about us</a></li>
-							<li><a href="tutorials.php"  data-hover="ABOUT US">tutorials</a></li>
-							<li><a href="articles.php"  data-hover="ABOUT US">articles</a></li>
+							<li><a href="tutorials.php"  data-hover="TUTORIALS">tutorials</a></li>
+							<li><a href="articles.php"  data-hover="ARTICLES">articles</a></li>
 								<div class="clearfix"> </div>
 						</ul>
 							<!-- script-for-nav -->
