@@ -6,47 +6,38 @@
 	<div class="about-section">
 		<div class="container">
 			<h2>About Us</h2>
-			<div class="col-md-8 about-left1">
-				<h3> Duis autem vel eum iriure </h3>
+			<div class="col-md-offset-2 col-md-8 about-left1">
+				<h3> Team Profiles </h3>
 				<div class="left">
 					<div class="left-top">
-						<img src="assets/images/gallery7.jpg"  class="img-responsive" alt="" />
+						<img src="assets/images/andika.jpg"  class="img-responsive" alt="" />
 					</div>
 					<div class="left-top1">
-						<h5><a href="details.html">Lorem ipsum dolor</a></h5>
-						<p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas Mirum est notare quam littera gothica, quam nunc putamus  humanitatis per seacula quarta decima et quinta decima.</p>
-						<a href="details.html"><button class="btn btn-1 btn-1a">View More</button></a>
+						<h5><a href="#">Andika Kurniawan</a></h5>
+						<p>
+              Andika has many experience in programming although his age is still young. He has programming experience in 2 years.
+              He is fast learner, love to learn anything and professional.
+              He has created many websites and mobile app. Almost products in our portofolio created by him.
+            </p>
+						<a href="#"><button class="btn btn-1 btn-1a">Expert Programmer</button></a>
 					</div>
 					<div class="clearfix"> </div>
 				</div>
 				<div class="left">
 					<div class="left-bottom">
-						<img src="assets/images/gallery4.jpg"  class="img-responsive" alt="" />
+						<img src="assets/images/fyka.jpg" class="img-responsive" alt="" />
 					</div>
 					<div class="left-bottom1">
-						<h5><a href="details.html">Lorem ipsum dolor</a></h5>
-						<p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum Mirum est notare quam littera gothica, quam nunc putamus claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima.</p>
-						<a href="details.html"><button class="btn btn-1 btn-1a">View More</button></a>
+						<h5><a href="#">Fyka Rizkia Auliandy</a></h5>
+						<p>
+              Rizkia is hard worker, love to learn anything and never underestimate little things or unimportant things.
+              He has many experience in programming. He has created many website and few of mobile app.
+            </p>
+						<a href="#"><button class="btn btn-1 btn-1a"> Expert Programmer </button></a>
 					</div>
 					<div class="clearfix"> </div>
 				</div>
 			</div>
-			<div class="col-md-4  about-right1">
-				<h3> Duis autem vel  </h3>
-				<div class="right-bottom">
-					<h5><a href="details.html">Lorem ipsum dolor</a></h5>
-					<p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima.</p>
-				</div>
-				<div class="right-bottom">
-					<h5><a href="details.html">Lorem ipsum dolor</a></h5>
-					<p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima.</p>
-				</div>
-				<div class="right-bottom">
-					<h5><a href="details.html">Lorem ipsum dolor</a></h5>
-					<p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima.</p>
-				</div>
-			</div>
-				<div class="clearfix"> </div>
 		</div>
 	</div>
 <!-- about-section -->

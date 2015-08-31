@@ -50,7 +50,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<!-- script-for-nav -->
 				</div>
 				<div class="head-right">
-					<p><a href="registration.html">CONTACT US</a></p>
+					<p><a href="contact_us.php">CONTACT US</a></p>
 				</div>
 				<div class="clearfix"> </div>
 			</div>
