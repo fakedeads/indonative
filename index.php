@@ -5,7 +5,7 @@
 <!-- thought -->
 	<div class="thought">
 		<div class="container">
-			<h1>The thought and consideration we put into our products go well beyond desing.</h1>
+			<h1>We Are Indonesian Youth On Creative Activity</h1>
 		</div>
 		<div class="wmuSlider example1 section" id="section-1">
 			   <article style="position: absolute; width: 100%; opacity: 0;">
