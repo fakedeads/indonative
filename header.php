@@ -8,7 +8,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>Source  A Corporate Category Flat Bootstarp Resposive Website Template | Home :: w3layouts</title>
+<title>Indonative Web</title>
 <link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
 <link href="assets/css/style.css" rel="stylesheet" type="text/css" media="all" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -32,7 +32,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<span class="menu"> </span>
 						<ul class="cl-effect-16">
 							<li><a href="index.php" data-hover="HOME" >home</a></li>
-              <li><a href="what_we_do.php"  data-hover="WHAT WE DO">what we do</a></li>
+							<li><a href="what_we_do.php"  data-hover="WHAT WE DO">what we do</a></li>
 							<li><a href="our_work.php"  data-hover="PORTOFOLIO">portofolio</a></li>
 							<li><a href="about_us.php"  data-hover="ABOUT US">about us</a></li>
 							<li><a href="tutorials.php"  data-hover="TUTORIALS">tutorials</a></li>

@@ -247,6 +247,27 @@ i.bar {
 	display: inline-block;
 	vertical-align: middle;
 }
+i.trust {
+	width: 50px;
+	height: 50px;
+	background: url(../images/trust.png)no-repeat -0px -0px;
+	display: inline-block;
+	vertical-align: middle;
+}
+i.heart {
+	width: 50px;
+	height: 50px;
+	background: url(../images/heart.png)no-repeat -0px -0px;
+	display: inline-block;
+	vertical-align: middle;
+}
+i.bag {
+	width: 50px;
+	height: 50px;
+	background: url(../images/bag.png)no-repeat -0px -0px;
+	display: inline-block;
+	vertical-align: middle;
+}
 .communt-left {
 	float: left;
 	width: 13%;
@@ -543,9 +564,9 @@ a.read {
 	display: block;
 	margin-left: 4%;
 }
-.grid_1_of_3:first-child {
-	margin-left: 0;
-}
+.grid_1_of_3:first-child { 
+	margin-left: 0; 
+} 
 .images_1_of_3 {
 	float:left;
 	width:30.333%;
@@ -767,6 +788,7 @@ display: inline-block;
 	font-weight: 600;
 }
 .register-top-grid div, .register-bottom-grid div {
+	width: 48%;
 	float: left;
 	margin: 10px 0;
 }
@@ -777,7 +799,7 @@ display: inline-block;
 	display: block;
 	text-transform: uppercase;
 }
-.register-top-grid input[type="text"], .register-bottom-grid input[type="text"], textarea#message {
+.register-top-grid input[type="text"], .register-bottom-grid input[type="text"] {
 	border: 1px solid #EEE;
 	outline-color:#FF5B36;
 	width: 96%;
@@ -852,7 +874,10 @@ display: inline-block;
 .news-letter:hover {
 	color:#00BFF0;
 }
-input[type="submit"] {
+.register-but{
+	margin-top:1em;
+}
+.register-but form input[type="submit"] {
 	background: #55bfea;
 	color: #FFF;
 	font-size: 1.2em;
@@ -866,8 +891,7 @@ input[type="submit"] {
 	border: none;
 	outline: none;
 }
-
-input[type="submit"]:hover {
+.register-but input[type="submit"]:hover {
 	background:#000;
 }
 div.register-bottom-grid {
@@ -901,7 +925,7 @@ div.register-bottom-grid {
 	font-size: 1em;
 }
 .link {
-	font-size: 0.9em;
+	font-size: 0.9em; 
 }
 .wmuSliderPrev {
 	background-position: -185px -7px;
@@ -1039,7 +1063,7 @@ h3.style1 {
 	display:block;
 }
 .head-nav ul li a:hover {
-	background: none;
+	background: none; 
 	color: #d80112;
 }
 .head-nav ul li a {

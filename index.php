@@ -5,7 +5,7 @@
 <!-- thought -->
 	<div class="thought">
 		<div class="container">
-			<h1>The thought and consideration we put into our products go well beyond desing.</h1>
+			<h1>We Are Indonesian Youth On Creative Activity</h1>
 		</div>
 		<div class="wmuSlider example1 section" id="section-1">
 			   <article style="position: absolute; width: 100%; opacity: 0;">
@@ -17,12 +17,11 @@
 						<div class="col-md-7 thought-right">
 							<div class="communt">
 								<div class="communt-left">
-									<i class="man"></i>
+									<i class="trust"></i>
 								</div>
 								<div class="communt-right">
-									<h4>Community</h4>
-									<p>More than <span>2 millon people</span>use products built by the Source community.</p>
-									<a href="details.html" class="link">Get Involved</a>
+									<h4>Friendly & Trusted</h4>
+									<p>Our client <span>satisfy</span> and <span>trust</span> is our priority.</p>
 								</div>
 								<div class="clearfix"> </div>
 							</div>
@@ -31,9 +30,8 @@
 									<i class="bulb"></i>
 								</div>
 								<div class="communt-right">
-									<h4>Design & Performance</h4>
-									<p>Creating an entirely new design meantinventing an entirely new techonology with a level of precision you’d excepet.</p>
-									<a href="details.html" class="link">Get Involved</a>
+									<h4>Begin From Ideas</h4>
+									<p>Creating the best product that came from our <span>creative ideas</span>.</p>
 								</div>
 								<div class="clearfix"> </div>
 							</div>
@@ -42,9 +40,8 @@
 									<i class="bar"></i>
 								</div>
 								<div class="communt-right">
-									<h4>Accurate results</h4>
-									<p>We give you - easy to understand, real time data on your smarthphone.</p>
-									<a href="details.html" class="link">Get Involved</a>
+									<h4>Do The Best Performance</h4>
+									<p>We give you the <span>best performance</span> in our limited time.</p>
 								</div>
 								<div class="clearfix"> </div>
 							</div>
@@ -66,30 +63,27 @@
 								</div>
 								<div class="communt-right">
 									<h4>Community</h4>
-									<p>More than <span>2 millon people</span> use products built by the Source community.</p>
-									<a href="details.html" class="link">Get Involved</a>
+									<p>We have join some of <span>deveoper community</span>.</p>
 								</div>
 								<div class="clearfix"> </div>
 							</div>
 							<div class="communt">
 								<div class="communt-left">
-									<i class="bulb"></i>
+									<i class="heart"></i>
 								</div>
 								<div class="communt-right">
-									<h4>Design & Performance</h4>
-									<p>Creating an entirely new design meantinventing an entirely new techonology with a level of precision you’d excepet.</p>
-									<a href="details.html" class="link">Get Involved</a>
+									<h4>Humanity</h4>
+									<p>One of our purpose is <span>charity for others</span>.</p>
 								</div>
 								<div class="clearfix"> </div>
 							</div>
 							<div class="communt">
 								<div class="communt-left">
-									<i class="bar"></i>
+									<i class="bag"></i>
 								</div>
 								<div class="communt-right">
-									<h4>Accurate results</h4>
-									<p>More than 2 millon people use products built by the Source community.</p>
-									<a href="details.html" class="link">Get Involved</a>
+									<h4>Professional</h4>
+									<p>We have a <span>lot of experience</span> in application development.</p>
 								</div>
 								<div class="clearfix"> </div>
 							</div>
