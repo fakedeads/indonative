@@ -15,7 +15,7 @@
 					echo '
 					<div class="left">
 						<div class="left-top">
-							<img src="assets/images/'.$row["foto"].'"  class="img-responsive" alt="" />
+							<img src="admin/images/'.$row["foto"].'"  class="img-responsive" alt="" />
 						</div>
 						<div class="left-top1">
 							<h5><a href="#">'.$row["title"].'</a></h5>

@@ -2,9 +2,10 @@
 <?php include "sidebar.php"; ?>
 
    <div id="page-wrapper">
+	<h1>AAAAAAAAAAAAAAAA</h1>
    </div>
- </div><!-- /#wrapper -->
+ <!-- /#wrapper -->
     <!-- Bootstrap Core JavaScript -->
    <script src="js/bootstrap.min.js"></script>
-</body>
-</html>
+   
+<?php include "footer.php"; ?>
