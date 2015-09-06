@@ -8,17 +8,23 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>Indonative Web</title>
-<link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
-<link href="assets/css/style.css" rel="stylesheet" type="text/css" media="all" />
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="Source Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template,
-Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
-<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" href="assets/css/flexslider.css" type="text/css" media="screen" />
-<script src="assets/js/jquery.min.js"></script>
+	<title>Indonative Web</title>
+	<link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+	<link href="assets/css/style.css" rel="stylesheet" type="text/css" media="all" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="Source Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template,
+	Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+	<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="assets/css/flexslider.css" type="text/css" media="screen" />
+	<script src="assets/js/jquery.min.js"></script>
+	<!-- slider -->
+	<link rel="stylesheet" type="text/css" media="all" href="assets/css/font-awesome.min.css" />
+	<link rel="stylesheet" type="text/css" media="all" href="assets/css/jgallery.min.css?v=1.5.0" />
+	<script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
+	<script type="text/javascript" src="js/jgallery.min.js?v=1.5.0"></script>
+	<script type="text/javascript" src="js/touchswipe.min.js"></script>
 </head>
 <body>
 <!-- header -->
