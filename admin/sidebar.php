@@ -8,7 +8,7 @@
                 <a href="#"><i class="fa fa-envelope nav_icon"></i>Tutorials</a>
               </li>
               <li>
-                <a href="ad_portfolio.php"><i class="fa fa-envelope nav_icon"></i>Portofolio</a>
+                <a href="portfolio.php"><i class="fa fa-envelope nav_icon"></i>Portofolio</a>
               </li>
             </ul>
           </div>

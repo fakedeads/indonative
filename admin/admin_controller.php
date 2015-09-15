@@ -2,6 +2,7 @@
 
 $databaseHandler = new DatabaseHandler;
 $articleHandler = new ArticleHandler;
+$portofolioHandler = new PortofolioHandler;
 
 class DatabaseHandler
 {
@@ -83,6 +84,48 @@ class ArticleHandler
     }
 }
 
+class PortofolioHandler 
+{
+    public $databaseHandler;
+
+    public function __construct() 
+	{
+        $this->databaseHandler = new DatabaseHandler;
+    }
+
+	public function query()
+	{
+		$query = "SELECT * FROM portofolio";
+		$retval = $this->databaseHandler->eksekusiDenganPengembalian($query);
+		return $retval;
+	}
+	
+	public function insert($title, $description, $nama_foto, $release_date) 
+	{
+		$newDate = date("Y-m-d", strtotime($release_date));
+		$query = "INSERT INTO
+							portofolio(title, description, foto, release_date)
+							VALUES
+							('$title', '$description', '$nama_foto', '$newDate')";
+		$this->databaseHandler->eksekusi($query);
+	}
+
+	public function update() 
+	{
+		/*
+		$query = "UPDATE spouse SET spouse_name = '$name', status = $status, marriage_date = '$marriage_date'
+							WHERE id_spouse = $id_spouse " ;
+		*/
+		$this->databaseHandler->eksekusi($query);
+	}
+
+	public function delete() 
+	{
+		//$query = "DELETE FROM spouse WHERE id_spouse = " . $id;
+		$this->databaseHandler->eksekusi($query);
+    }
+}
+
 $code = $_POST["code"];
 	echo $code;
 	switch ($code) 
@@ -117,8 +160,41 @@ $code = $_POST["code"];
 					echo 'Oops! Terdapat error :'.$_FILES["photo"]["error"];
 				}
 			}
-      //header('Location: index.php');
-	  break;
+		break;
+		header('Location: index.php');
+		case "portofolio":
+			if($_FILES["photo"]["name"])
+			{
+				if(!$_FILES["photo"]["error"])
+				{
+					$newName = strtolower($_FILES["photo"]["name"]);
+					
+					if($_FILES["photo"]["size"] < (1024000))
+					{
+						if(is_uploaded_file($_FILES["photo"]["tmp_name"]))
+						{
+							$title = $_POST["title"];
+							$description = $_POST["description"];
+							$foto = $newName;
+							$release_date = $_POST["release_date"];
+							move_uploaded_file($_FILES["photo"]["tmp_name"], 'C:/xampp/htdocs/indonative/admin/images/'.$newName);
+							$portofolioHandler->insert($title, $description, $foto, $release_date);
+							echo $title.'<br/>'.$description.'<br/>'.$foto.'<br/>'.$_FILES["photo"]["size"].'<br/>';
+							echo 'Selamat! Data berhasil masuk';
+						}
+					}
+					else
+					{
+						echo 'Oops! file foto Anda terlalu besar.';
+					}
+				}
+				else
+				{
+					echo 'Oops! Terdapat error :'.$_FILES["photo"]["error"];
+				}
+			}
+      break;
+	  header('Location: index.php');
 	  default:
 		break;
 	}

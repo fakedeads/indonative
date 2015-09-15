@@ -3,6 +3,7 @@
 $databaseHandler = new DatabaseHandler;
 $contactUsHandler = new ContactUsHandler;
 $articleHandler = new ArticleHandler;
+$portofolioHandler = new PortofolioHandler;
 
 class DatabaseHandler
 {
@@ -88,29 +89,29 @@ class ArticleHandler
 		$retval = $this->databaseHandler->eksekusiDenganPengembalian($query);
 		return $retval;
 	}
+}
 
-	public function insert($name, $phone_number, $email_address, $message)
-	{
-		$query = "INSERT INTO
-							message_list(id_message, name, phone_number, email_address, message)
-							VALUES
-							(null, '$name', '$phone_number', '$email_address', '$message')";
-		$this->databaseHandler->eksekusi($query);
-	}
+class PortofolioHandler
+{
+    public $databaseHandler;
 
-	public function update()
-	{
-		/*
-		$query = "UPDATE spouse SET spouse_name = '$name', status = $status, marriage_date = '$marriage_date'
-							WHERE id_spouse = $id_spouse " ;
-		*/
-		$this->databaseHandler->eksekusi($query);
-	}
-
-	public function delete()
-	{
-		//$query = "DELETE FROM spouse WHERE id_spouse = " . $id;
-		$this->databaseHandler->eksekusi($query);
+    public function __construct()
+				{
+        $this->databaseHandler = new DatabaseHandler;
     }
+
+	public function query()
+	{
+		$query = "SELECT * FROM portofolio";
+		$retval = $this->databaseHandler->eksekusiDenganPengembalian($query);
+		return $retval;
+	}
+
+	public function queryDetail($id)
+	{
+		$query = "SELECT * FROM portofolio where id = ".$id;
+		$retval = $this->databaseHandler->eksekusiDenganPengembalian($query);
+		return $retval;
+	}
 }
 ?>
