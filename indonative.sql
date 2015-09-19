@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Inang: 127.0.0.1
--- Waktu pembuatan: 09 Sep 2015 pada 17.32
+-- Waktu pembuatan: 19 Sep 2015 pada 17.20
 -- Versi Server: 5.5.27
 -- Versi PHP: 5.4.7
 
@@ -88,6 +88,19 @@ CREATE TABLE IF NOT EXISTS `portofolio` (
 
 INSERT INTO `portofolio` (`id`, `title`, `description`, `foto`, `release_date`) VALUES
 (1, 'Aplikasi BPJS Kesehatan', 'Aplikasi BPJS Kesehatan ini dibuat saat acara hackathon di Bandung Digital Valley.', 'screenshot aplikasi bpjs.png', '2014-09-27');
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `portofolio_photo`
+--
+
+CREATE TABLE IF NOT EXISTS `portofolio_photo` (
+  `id_portofolio` int(11) NOT NULL,
+  `title_photo` varchar(100) NOT NULL,
+  `foto` varchar(50) NOT NULL,
+  PRIMARY KEY (`id_portofolio`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
