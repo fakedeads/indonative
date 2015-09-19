@@ -1,13 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 3.5.2.2
+-- version 4.4.3
 -- http://www.phpmyadmin.net
 --
--- Inang: 127.0.0.1
--- Waktu pembuatan: 19 Sep 2015 pada 17.20
--- Versi Server: 5.5.27
--- Versi PHP: 5.4.7
+-- Host: localhost
+-- Generation Time: Sep 19, 2015 at 06:07 PM
+-- Server version: 5.6.24
+-- PHP Version: 5.6.8
 
-SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
 
 
@@ -17,26 +17,25 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8 */;
 
 --
--- Basis data: `indonative`
+-- Database: `indonative`
 --
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `article`
+-- Table structure for table `article`
 --
 
 CREATE TABLE IF NOT EXISTS `article` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `id` int(11) NOT NULL,
   `title` varchar(100) NOT NULL,
   `description` text NOT NULL,
   `foto` varchar(50) NOT NULL,
-  `date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
+  `date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `article`
+-- Dumping data for table `article`
 --
 
 INSERT INTO `article` (`id`, `title`, `description`, `foto`, `date`) VALUES
@@ -47,20 +46,19 @@ INSERT INTO `article` (`id`, `title`, `description`, `foto`, `date`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `message_list`
+-- Table structure for table `message_list`
 --
 
 CREATE TABLE IF NOT EXISTS `message_list` (
-  `id_message` int(11) NOT NULL AUTO_INCREMENT,
+  `id_message` int(11) NOT NULL,
   `name` varchar(80) NOT NULL,
   `phone_number` varchar(20) NOT NULL,
   `email_address` varchar(60) NOT NULL,
-  `message` text NOT NULL,
-  PRIMARY KEY (`id_message`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
+  `message` text NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `message_list`
+-- Dumping data for table `message_list`
 --
 
 INSERT INTO `message_list` (`id_message`, `name`, `phone_number`, `email_address`, `message`) VALUES
@@ -70,38 +68,87 @@ INSERT INTO `message_list` (`id_message`, `name`, `phone_number`, `email_address
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `portofolio`
+-- Table structure for table `portofolio`
 --
 
 CREATE TABLE IF NOT EXISTS `portofolio` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `id` int(11) NOT NULL,
   `title` varchar(100) NOT NULL,
   `description` text NOT NULL,
   `foto` varchar(50) NOT NULL,
-  `release_date` date NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+  `release_date` date NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `portofolio`
+-- Dumping data for table `portofolio`
 --
 
 INSERT INTO `portofolio` (`id`, `title`, `description`, `foto`, `release_date`) VALUES
-(1, 'Aplikasi BPJS Kesehatan', 'Aplikasi BPJS Kesehatan ini dibuat saat acara hackathon di Bandung Digital Valley.', 'screenshot aplikasi bpjs.png', '2014-09-27');
+(1, 'Aplikasi BPJS Kesehatan', 'Aplikasi BPJS Kesehatan ini dibuat saat acara hackathon di Bandung Digital Valley.', 'screenshot aplikasi bpjs.png', '2014-09-27'),
+(8, 'International Conference Special Education (ICSE) Ebook', 'Test test test', 'icse2015.png', '2015-09-02'),
+(9, 'MIDI Website', 'This is midi website. This site provide few of old western pop song. Those are like Jet, Kelly Clarkson, The Cure, etc.', 'midi-website.png', '2015-08-19'),
+(10, 'SEAMEO SEN - Human Resource Management', 'This site is human resource website of SEAMEO SEN Office. In the website, there is auto cv generator, many informations about every employees, employee salary and other things related with employee. ', 'seameosen-hrd.png', '2015-09-30'),
+(11, 'Agenda Of Sarawak Government Meeting With SEAMEO SEN ', 'This is website view of meeting agenda which includes Sarawak Government and SEAMEO SEN.', 'sarawak-agenda.png', '2015-09-15');
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `portofolio_photo`
+-- Table structure for table `portofolio_photo`
 --
 
 CREATE TABLE IF NOT EXISTS `portofolio_photo` (
   `id_portofolio` int(11) NOT NULL,
   `title_photo` varchar(100) NOT NULL,
-  `foto` varchar(50) NOT NULL,
-  PRIMARY KEY (`id_portofolio`)
+  `foto` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `article`
+--
+ALTER TABLE `article`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `message_list`
+--
+ALTER TABLE `message_list`
+  ADD PRIMARY KEY (`id_message`);
+
+--
+-- Indexes for table `portofolio`
+--
+ALTER TABLE `portofolio`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `portofolio_photo`
+--
+ALTER TABLE `portofolio_photo`
+  ADD PRIMARY KEY (`id_portofolio`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `article`
+--
+ALTER TABLE `article`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=5;
+--
+-- AUTO_INCREMENT for table `message_list`
+--
+ALTER TABLE `message_list`
+  MODIFY `id_message` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
+--
+-- AUTO_INCREMENT for table `portofolio`
+--
+ALTER TABLE `portofolio`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=12;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
