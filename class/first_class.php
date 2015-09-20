@@ -113,5 +113,12 @@ class PortofolioHandler
 		$retval = $this->databaseHandler->eksekusiDenganPengembalian($query);
 		return $retval;
 	}
+	
+	public function queryPhoto($id)
+	{
+		$query = "SELECT * FROM portofolio_photo where id_portofolio = '$id'";
+		$retval = $this->databaseHandler->eksekusiDenganPengembalian($query);
+		return $retval;
+	}
 }
 ?>

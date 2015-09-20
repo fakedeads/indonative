@@ -22,9 +22,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<!-- slider -->
 	<link rel="stylesheet" type="text/css" media="all" href="assets/css/font-awesome.min.css" />
 	<link rel="stylesheet" type="text/css" media="all" href="assets/css/jgallery.min.css?v=1.5.0" />
-	<script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
-	<script type="text/javascript" src="js/jgallery.min.js?v=1.5.0"></script>
-	<script type="text/javascript" src="js/touchswipe.min.js"></script>
+	<script type="text/javascript" src="assets/js/jquery-2.0.3.min.js"></script>
+	<script type="text/javascript" src="assets/js/jgallery.min.js?v=1.5.0"></script>
+	<script type="text/javascript" src="assets/js/touchswipe.min.js"></script>
 </head>
 <body>
 <!-- header -->

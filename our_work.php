@@ -59,9 +59,9 @@
 	</div>
 
 <div id="gallery">
-    <a href="detail_our_work.php?id=1"><img src="assets/images/large/screenshot aplikasi bpjs.png" alt="Hackathon : Aplikasi BPJS Kesehatan" /></a>
-	<a href="http://jgallery.jakubkowalczyk.pl"><img src="assets/images/large/2.jpg" alt="Photo 2" /></a>
-    <a href="http://jgallery.jakubkowalczyk.pl"><img src="assets/images/large/3.jpg" alt="Photo 3" /></a>
+    <a href="detail_our_work.php?id=1"><img src="admin/images/portofolio/screenshot aplikasi bpjs.png" alt="Hackathon : Aplikasi BPJS Kesehatan" /></a>
+	<a href="http://jgallery.jakubkowalczyk.pl"><img src="admin/images/portofolio/2.jpg" alt="Photo 2" /></a>
+    <a href="http://jgallery.jakubkowalczyk.pl"><img src="admin/images/portofolio/3.jpg" alt="Photo 3" /></a>
 </div>
 <script type="text/javascript">
 $( function() {

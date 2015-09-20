@@ -10,6 +10,9 @@
               <li>
                 <a href="portfolio.php"><i class="fa fa-envelope nav_icon"></i>Portofolio</a>
               </li>
+			  <li>
+                <a href="add_portfolio_photo.php"><i class="fa fa-envelope nav_icon"></i>Add Portofolio Photos</a>
+              </li>
             </ul>
           </div>
       </div>
