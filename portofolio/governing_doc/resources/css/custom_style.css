@@ -1,0 +1,13 @@
+ol > li > a, ul > li > a {
+	color: #999;
+}
+
+ol > li, ul > li {
+	font-size : 1.1em;
+	color: #999;
+}
+
+ol, ul {
+	margin-bottom: 20px;
+	margin-left: 30px;
+}
