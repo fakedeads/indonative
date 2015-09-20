@@ -30,13 +30,6 @@ $( function() {
 				<h2>'.$row["title"].'</h2>
 				<div class="col-md-offset-2 col-md-8 about-left1">
 					<div class="left">
-<<<<<<< HEAD
-=======
-						<div class="left-top">
-							<img src="admin/images/portofolio/'.$row["foto"].'"  class="img-responsive" alt="" />
-						</div>
-						<div class="left-top1">
->>>>>>> 4cc4bc4eef0dfe229637c9738658ef93427ea7df
 							<p>
 							  Release date : '.date_format(date_create($row["release_date"]),"d M Y").'
 							  <br/>

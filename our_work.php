@@ -20,6 +20,9 @@
    	<script type="text/javascript" src="assets/js/jquery-2.0.3.min.js"></script>
    	<script type="text/javascript" src="assets/js/jgallery.min.js?v=1.5.0"></script>
    	<script type="text/javascript" src="assets/js/touchswipe.min.js"></script>
+	<?php
+		include "class/first_class.php";
+	?>
 </head>
 <body >
  <div class="header">
@@ -59,9 +62,17 @@
 	</div>
 
 <div id="gallery">
-    <a href="detail_our_work.php?id=1"><img src="admin/images/portofolio/screenshot aplikasi bpjs.png" alt="Hackathon : Aplikasi BPJS Kesehatan" /></a>
-	<a href="http://jgallery.jakubkowalczyk.pl"><img src="admin/images/portofolio/2.jpg" alt="Photo 2" /></a>
-    <a href="http://jgallery.jakubkowalczyk.pl"><img src="admin/images/portofolio/3.jpg" alt="Photo 3" /></a>
+	<?php
+		$rows = $portofolioHandler->query();
+		while($row = mysql_fetch_array($rows, MYSQL_ASSOC))
+		{
+			echo '<a href="detail_our_work.php?id='.$row["id"].'"><img src="admin/images/portofolio/'.$row["foto"].'" alt="'.$row["title"].'" /></a>';
+		}
+	//<a href="detail_our_work.php?id=1"><img src="admin/images/portofolio/screenshot aplikasi bpjs.png" alt="Hackathon : Aplikasi BPJS Kesehatan" /></a>
+	//<a href="http://jgallery.jakubkowalczyk.pl"><img src="admin/images/portofolio/2.jpg" alt="Photo 2" /></a>
+    //<a href="http://jgallery.jakubkowalczyk.pl"><img src="admin/images/portofolio/3.jpg" alt="Photo 3" /></a>
+
+	?>
 </div>
 <script type="text/javascript">
 $( function() {
