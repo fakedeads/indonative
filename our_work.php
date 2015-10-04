@@ -16,7 +16,7 @@
 							echo '<a href="detail_our_work.php?id='.$row["id"].'"><img src="admin/images/portofolio/'.$row["foto"].'" alt="<b>'.$row["title"].'</b>"/></a>';
 						}
 					?>
-				</div>
+			</div>
 				<script type="text/javascript">
 				$( function() {
 					$( '#gallery' ).jGallery( { mode: 'slider' } );
