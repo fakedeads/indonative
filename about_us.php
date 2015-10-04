@@ -15,24 +15,38 @@
 					<div class="left-top1">
 						<h5><a href="#">Andika Kurniawan</a></h5>
 						<p>
-              Andika has many experience in programming although his age is still young. He has programming experience in 2 years.
-              He is fast learner, love to learn anything and professional.
-              He has created many websites and mobile app. Almost products in our portofolio created by him.
-            </p>
+						  Andika has many experience in programming although his age is still young. He has programming experience in 2 years.
+						  He is fast learner, love to learn anything and professional.
+						  He has created many websites and mobile app. Almost products in our portofolio created by him.
+						</p>
 						<a href="#"><button class="btn btn-1 btn-1a">Expert Programmer</button></a>
 					</div>
 					<div class="clearfix"> </div>
 				</div>
 				<div class="left">
 					<div class="left-bottom">
-						<img src="assets/images/fyka.jpg" class="img-responsive" alt="" />
+						<img src="assets/images/rizkia.jpg" class="img-responsive" alt="" />
 					</div>
 					<div class="left-bottom1">
 						<h5><a href="#">Fyka Rizkia Auliandy</a></h5>
 						<p>
-              Rizkia is hard worker, love to learn anything and never underestimate little things or unimportant things.
-              He has many experience in programming. He has created many website and few of mobile app.
-            </p>
+						  Rizkia is hard worker, love to learn anything and never underestimate little things or unimportant things.
+						  He has many experience in programming. He has created many website and few of mobile app.
+						</p>
+						<a href="#"><button class="btn btn-1 btn-1a"> Expert Programmer </button></a>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="left">
+					<div class="left-bottom">
+						<img src="assets/images/haliim.jpg" class="img-responsive" alt="" />
+					</div>
+					<div class="left-bottom1">
+						<h5><a href="#">Wahyu Dwi Nurhaliim</a></h5>
+						<p>
+						  Haliim has a great talent in designing and carefully to the detail things.
+						  He has many experience in programming especially web programming. He has created many websites and images.
+						</p>
 						<a href="#"><button class="btn btn-1 btn-1a"> Expert Programmer </button></a>
 					</div>
 					<div class="clearfix"> </div>

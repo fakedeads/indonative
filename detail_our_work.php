@@ -8,11 +8,11 @@
 		$id = $_GET["id"];
 		$rows = $portofolioHandler->queryDetail($id);
 		$row = mysql_fetch_array($rows, MYSQL_ASSOC);
-		echo '<img src="admin/images/portofolio/'.$row["foto"].'" alt="'.$row["title"].'" />';
+		echo '<img src="admin/images/portofolio/'.$row["foto"].'" alt="<b>'.$row["title"].'</b>" />';
 		$rows = $portofolioHandler->queryPhoto($id);
 		while($row_foto = mysql_fetch_array($rows, MYSQL_ASSOC))
 		{
-			echo '<img src="admin/images/portofolio/'.$row_foto["foto"].'" alt="'.$row_foto["title_photo"].'" />';
+			echo '<img src="admin/images/portofolio/'.$row_foto["foto"].'" alt="<b>'.$row_foto["title_photo"].'</b>"/>';
 		}
 	?>
 </div>
@@ -30,15 +30,8 @@ $( function() {
 				<h2>'.$row["title"].'</h2>
 				<div class="col-md-offset-2 col-md-8 about-left1">
 					<div class="left">
-<<<<<<< HEAD
-=======
-						<div class="left-top">
-							<img src="admin/images/portofolio/'.$row["foto"].'"  class="img-responsive" alt="" />
-						</div>
-						<div class="left-top1">
->>>>>>> 4cc4bc4eef0dfe229637c9738658ef93427ea7df
 							<p>
-							  Release date : '.date_format(date_create($row["release_date"]),"d M Y").'
+							  <b>Release date : '.date_format(date_create($row["release_date"]),"d M Y").'</b>
 							  <br/>
 							  '.$row["description"].'
 							</p>

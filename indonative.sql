@@ -1,20 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.4.3
+-- version 3.5.2.2
 -- http://www.phpmyadmin.net
 --
-<<<<<<< HEAD
 -- Inang: 127.0.0.1
--- Waktu pembuatan: 19 Sep 2015 pada 17.20
+-- Waktu pembuatan: 20 Sep 2015 pada 16.59
 -- Versi Server: 5.5.27
 -- Versi PHP: 5.4.7
-=======
--- Host: localhost
--- Generation Time: Sep 19, 2015 at 06:07 PM
--- Server version: 5.6.24
--- PHP Version: 5.6.8
->>>>>>> 4cc4bc4eef0dfe229637c9738658ef93427ea7df
 
-SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
 
 
@@ -24,25 +17,26 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8 */;
 
 --
--- Database: `indonative`
+-- Basis data: `indonative`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `article`
+-- Struktur dari tabel `article`
 --
 
 CREATE TABLE IF NOT EXISTS `article` (
-  `id` int(11) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `title` varchar(100) NOT NULL,
   `description` text NOT NULL,
   `foto` varchar(50) NOT NULL,
-  `date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
+  `date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
 
 --
--- Dumping data for table `article`
+-- Dumping data untuk tabel `article`
 --
 
 INSERT INTO `article` (`id`, `title`, `description`, `foto`, `date`) VALUES
@@ -53,19 +47,20 @@ INSERT INTO `article` (`id`, `title`, `description`, `foto`, `date`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `message_list`
+-- Struktur dari tabel `message_list`
 --
 
 CREATE TABLE IF NOT EXISTS `message_list` (
-  `id_message` int(11) NOT NULL,
+  `id_message` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(80) NOT NULL,
   `phone_number` varchar(20) NOT NULL,
   `email_address` varchar(60) NOT NULL,
-  `message` text NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+  `message` text NOT NULL,
+  PRIMARY KEY (`id_message`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
 
 --
--- Dumping data for table `message_list`
+-- Dumping data untuk tabel `message_list`
 --
 
 INSERT INTO `message_list` (`id_message`, `name`, `phone_number`, `email_address`, `message`) VALUES
@@ -75,19 +70,20 @@ INSERT INTO `message_list` (`id_message`, `name`, `phone_number`, `email_address
 -- --------------------------------------------------------
 
 --
--- Table structure for table `portofolio`
+-- Struktur dari tabel `portofolio`
 --
 
 CREATE TABLE IF NOT EXISTS `portofolio` (
-  `id` int(11) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `title` varchar(100) NOT NULL,
   `description` text NOT NULL,
   `foto` varchar(50) NOT NULL,
-  `release_date` date NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=latin1;
+  `release_date` date NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=12 ;
 
 --
--- Dumping data for table `portofolio`
+-- Dumping data untuk tabel `portofolio`
 --
 
 INSERT INTO `portofolio` (`id`, `title`, `description`, `foto`, `release_date`) VALUES
@@ -100,73 +96,26 @@ INSERT INTO `portofolio` (`id`, `title`, `description`, `foto`, `release_date`) 
 -- --------------------------------------------------------
 
 --
-<<<<<<< HEAD
 -- Struktur dari tabel `portofolio_photo`
-=======
--- Table structure for table `portofolio_photo`
->>>>>>> 4cc4bc4eef0dfe229637c9738658ef93427ea7df
 --
 
 CREATE TABLE IF NOT EXISTS `portofolio_photo` (
+  `index` int(11) NOT NULL AUTO_INCREMENT,
   `id_portofolio` int(11) NOT NULL,
   `title_photo` varchar(100) NOT NULL,
-<<<<<<< HEAD
-  `foto` varchar(50) NOT NULL,
-  PRIMARY KEY (`id_portofolio`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
-=======
-  `foto` varchar(50) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+  `foto` varchar(100) NOT NULL,
+  PRIMARY KEY (`index`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
 
 --
--- Indexes for dumped tables
+-- Dumping data untuk tabel `portofolio_photo`
 --
 
---
--- Indexes for table `article`
---
-ALTER TABLE `article`
-  ADD PRIMARY KEY (`id`);
+INSERT INTO `portofolio_photo` (`index`, `id_portofolio`, `title_photo`, `foto`) VALUES
+(1, 1, 'info lebih lanjut tentang BPJS Kesehatan', 'info bpjs kesehatan.jpg'),
+(2, 1, 'map tempat di bandung yang didukung oleh BPJS Kesehatan', 'map bpjs kesehatan bandung.jpg'),
+(3, 1, 'rute arah dari posisi user ke rumah sakit hasan sadikin', 'rute arah ke rumah sakit.jpg');
 
---
--- Indexes for table `message_list`
---
-ALTER TABLE `message_list`
-  ADD PRIMARY KEY (`id_message`);
-
---
--- Indexes for table `portofolio`
---
-ALTER TABLE `portofolio`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `portofolio_photo`
---
-ALTER TABLE `portofolio_photo`
-  ADD PRIMARY KEY (`id_portofolio`);
-
---
--- AUTO_INCREMENT for dumped tables
---
-
---
--- AUTO_INCREMENT for table `article`
---
-ALTER TABLE `article`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=5;
---
--- AUTO_INCREMENT for table `message_list`
---
-ALTER TABLE `message_list`
-  MODIFY `id_message` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
---
--- AUTO_INCREMENT for table `portofolio`
---
-ALTER TABLE `portofolio`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=12;
->>>>>>> 4cc4bc4eef0dfe229637c9738658ef93427ea7df
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
