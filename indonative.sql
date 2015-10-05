@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Inang: 127.0.0.1
--- Waktu pembuatan: 20 Sep 2015 pada 16.59
+-- Waktu pembuatan: 05 Okt 2015 pada 17.29
 -- Versi Server: 5.5.27
 -- Versi PHP: 5.4.7
 
@@ -19,6 +19,25 @@ SET time_zone = "+00:00";
 --
 -- Basis data: `indonative`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `account`
+--
+
+CREATE TABLE IF NOT EXISTS `account` (
+  `username` varchar(30) NOT NULL,
+  `password` varchar(40) NOT NULL,
+  PRIMARY KEY (`username`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data untuk tabel `account`
+--
+
+INSERT INTO `account` (`username`, `password`) VALUES
+('admin', 'ADMiniSTratoR');
 
 -- --------------------------------------------------------
 
