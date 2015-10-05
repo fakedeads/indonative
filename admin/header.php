@@ -52,7 +52,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			          <li class="dropdown">
    	        		<a href="#" class="dropdown-toggle avatar" data-toggle="dropdown"><img src="images/1.png"><span class="badge">9</span></a>
    	        		<ul class="dropdown-menu">
-         						<li class="m_2"><a href="#"><i class="fa fa-lock"></i> Logout</a></li>
+         						<li class="m_2"><a href="logout.php"><i class="fa fa-lock"></i> Logout</a></li>
    	        		</ul>
    	      		</li>
    			     </ul>
