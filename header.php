@@ -31,7 +31,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<div class="header">
   	    <div class="container">
 			<div class="logo">
-				<a href="index.html"><img src="assets/images/logo.png" class="img-responsive" alt="" /></a>
+				<a href="index.html"><img src="assets/images/indonative logo mini.png" class="img-responsive" alt="" /></a>
 			</div>
 			<div class="hader-top">
 				<div class="head-nav">

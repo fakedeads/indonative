@@ -3,6 +3,10 @@
   include "class/first_class.php";
 ?>
 
+<div class="container">
+	<a href="our_work.php"><h5><< Back To Our Work</h5></a>
+</div>
+	
 <div id="gallery">
 	 <?php 
 		$id = $_GET["id"];
