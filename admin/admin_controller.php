@@ -3,6 +3,8 @@
 	
 	$code = $_POST["code"];
 	echo $code;
+
+	
 	//For Windows
 	//$uploadPortofolioDirectory = 'C:/xampp/htdocs/indonative/admin/images/portofolio/';
 	//$uploadArticleDirectory = 'C:/xampp/htdocs/indonative/admin/images/articles/';

@@ -45,7 +45,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">INDONATIVE</a>
+                <a class="navbar-brand" href="index.php">INDONATIVE</a>
             </div>
             <!-- /.navbar-header -->
             <ul class="nav navbar-nav navbar-right">
@@ -56,3 +56,5 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
    	        		</ul>
    	      		</li>
    			     </ul>
+             <script src="js/bootstrap.min.js"></script>
+             
